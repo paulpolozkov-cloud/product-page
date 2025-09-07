@@ -8,50 +8,105 @@
     body {
       margin: 0;
       padding: 0;
-      background: #00c5de;
       font-family: sans-serif;
+      background: #00c5de;
       text-align: center;
     }
+
     .image-container {
       max-width: 600px;
       margin: 0 auto;
     }
+
     .image-container img {
       width: 100%;
       display: block;
     }
-    .buttons {
-      margin: 30px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
+
+    .reco {
+      background: #ffffff;
+      padding: 40px 20px;
+      margin-top: 40px;
     }
-    .button {
+
+    .reco h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .reco ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 30px;
+      max-width: 300px;
+    }
+
+    .reco ul li {
+      font-size: 18px;
+      margin: 8px 0;
+      color: #222;
+    }
+
+    .wb-button {
       display: inline-block;
-      padding: 15px 30px;
-      background-color: #0077cc;
+      padding: 14px 28px;
+      background-color: #8a2be2;
       color: white;
       text-decoration: none;
       border-radius: 6px;
       font-size: 18px;
-      width: 80%;
-      max-width: 300px;
+      font-weight: bold;
+      margin-top: 15px;
     }
-    .button.support {
-      background-color: #25D366;
+
+    .support-bar {
+      background: #f2f2f2;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .support-bar p {
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .tg-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0088cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
+  <!-- Инструкция -->
   <div class="image-container">
     <img src="printer-guide.png" alt="Инструкция по эксплуатации">
   </div>
 
-  <div class="buttons">
-    <a class="button support" href="https://t.me/PVP_support" target="_blank">Техподдержка</a>
-    <a class="button" href="https://www.wildberries.ru/seller/123456" target="_blank">Перейти в магазин</a>
+  <!-- Рекомендации -->
+  <div class="reco">
+    <h2>Рекомендуем в нашем магазине:</h2>
+    <ul>
+      <li>Наволочки декоративные</li>
+      <li>Пледы декоративные</li>
+      <li>Принтеры портативные</li>
+      <li>Мелкая техника</li>
+    </ul>
+    <a class="wb-button" href="https://www.wildberries.ru/seller/3921358" target="_blank">Перейти в каталог Wildberries</a>
+  </div>
+
+  <!-- Поддержка -->
+  <div class="support-bar">
+    <p>Если у Вас возникли проблемы с товаром или дополнительные вопросы,<br>
+       Вы всегда можете обратиться в нашу поддержку в Telegram:</p>
+    <a class="tg-button" href="https://t.me/PVP_support" target="_blank">@PVP_support</a>
   </div>
 
 </body>
