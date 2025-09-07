@@ -2,22 +2,57 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Информация о товаре</title>
+  <title>Инструкция по эксплуатации</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-    h1 { color: #333; }
-    ul { padding-left: 20px; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #00c5de;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .image-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .image-container img {
+      width: 100%;
+      display: block;
+    }
+    .buttons {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+      width: 80%;
+      max-width: 300px;
+    }
+    .button.support {
+      background-color: #25D366;
+    }
   </style>
 </head>
 <body>
-  <h1>Спасибо за покупку!</h1>
-  <p>Вы приобрели наш товар. Здесь вы найдёте нужную информацию:</p>
-  <ul>
-    <li><strong>Название:</strong> Вакууматор Model X100</li>
-    <li><strong>Инструкция:</strong> <a href="#">Скачать PDF</a></li>
-    <li><strong>Гарантия:</strong> 12 месяцев</li>
-    <li><strong>Поддержка:</strong> support@example.com</li>
-  </ul>
+
+  <div class="image-container">
+    <img src="printer-guide.png" alt="Инструкция по эксплуатации">
+  </div>
+
+  <div class="buttons">
+    <a class="button support" href="https://t.me/PVP_support" target="_blank">Техподдержка</a>
+    <a class="button" href="https://www.wildberries.ru/seller/123456" target="_blank">Перейти в магазин</a>
+  </div>
+
 </body>
 </html>
